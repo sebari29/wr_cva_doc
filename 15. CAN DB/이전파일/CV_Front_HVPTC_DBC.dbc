@@ -1,0 +1,172 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: HVPP CCU
+
+
+BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
+ SG_ New_Signal_1 : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ HVRear__DutyFBFloor_Perc : 0|8@1+ (0.5,0) [0|100] "%" Vector__XXX
+ SG_ HVRear__CurentFloor_A : 0|8@1+ (0.2,0) [0|50] "A" Vector__XXX
+ SG_ HVRear__VoltageFloor_V : 0|8@1+ (4,0) [0|1000] "V" Vector__XXX
+ SG_ HVRear__CstPwrFloor_W : 0|1@1+ (1,0) [0|10000] "W" Vector__XXX
+ SG_ HVREAR__OutTempFloor_DegC : 0|8@1+ (1,-40) [-40|240] "DegC" Vector__XXX
+ SG_ HVREAR_SoftwareVerFloor_Num : 0|8@1+ (1,0) [0|255] "flag" Vector__XXX
+ SG_ HVREAR_FailFloorOpenLoad_Flag : 0|1@1+ (1,0) [0|1] "flag" Vector__XXX
+ SG_ HVREAR_FailFloorIGBT_Flag : 0|1@1+ (1,0) [0|1] "flag" Vector__XXX
+ SG_ HVREAR_FailCoreTempSnsrFloorFlag : 0|2@1+ (1,0) [0|1] "flag" Vector__XXX
+ SG_ HVREAR_FailCurrentSnsrFloor_Flag : 0|1@1+ (1,0) [0|1] "flag" Vector__XXX
+ SG_ HVREAR_FailLVSensorFloor_Flag : 0|1@1+ (1,0) [0|1] "flag" Vector__XXX
+ SG_ HVREAR_FailHVSensorFloor_Flag : 0|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ CCU_FltMsgTmOutHVREAR4_Flag : 0|16@1- (1,0) [0|1] "flag" Vector__XXX
+ SG_ CCU_FltMsgTmOutHVREAR3_Flag : 0|8@1- (1,0) [0|1] "flag" Vector__XXX
+ SG_ CCU_FltMsgTmOutHVREAR2_Flag : 0|8@1- (1,0) [0|1] "flag" Vector__XXX
+ SG_ HVREAR_SoftwareVerRoof_Num : 0|8@1+ (1,0) [0|255] "flag" Vector__XXX
+ SG_ HVREAR_FailCoreTempSnsrRoof_Flag : 0|1@1+ (1,0) [0|1] "flag" Vector__XXX
+ SG_ HVREAR_FailCurrentSnsrRoof_Flag : 0|1@1+ (1,0) [0|1] "flag" Vector__XXX
+ SG_ HVREAR_FailHVSensorRoof_Flag : 0|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ HVRear__DutyFBRoof_Perc : 0|8@1+ (0.5,0) [0|100] "%" Vector__XXX
+ SG_ HVRear__CurentRoof_A : 0|8@1+ (0.2,0) [0|50] "A" Vector__XXX
+ SG_ HVRear__VoltageRoof_V : 0|8@1+ (4,0) [0|1000] "V" Vector__XXX
+ SG_ HVRear__CstPwrRoof_W : 0|16@1+ (1,0) [0|10000] "W" Vector__XXX
+ SG_ HVREAR__OutTempRoof_DegC : 0|8@1+ (1,-40) [-40|240] "DegC" Vector__XXX
+ SG_ ds : 0|1@1+ (1,0) [0|2] "flag" Vector__XXX
+ SG_ HVREAR_ReadyStatusRoof_Flag : 0|1@1+ (1,0) [0|1] "flag" Vector__XXX
+ SG_ PTC_DrCoreTemp : 0|8@1+ (1,-40) [-40|160] "กษ" Vector__XXX
+ SG_ PTC_FailPsCoreTempSensor : 0|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ PTC_FailPsCurrentSensor : 0|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ PTC_FaultPsPtcOverCurrent : 0|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ PTC_PtcInputVolt : 0|8@1+ (4,0) [0|1000] "V" Vector__XXX
+ SG_ PTC_SWVersion : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ PTC_ConsumptionPwrSum_W : 0|16@1+ (1,0) [0|10000] "W" Vector__XXX
+ SG_ PTC_PcbTemp : 0|8@1+ (1,-40) [-40|160] "กษ" Vector__XXX
+ SG_ PTC_InterLockDetect : 0|1@1+ (1,0) [0|1] "Flag" Vector__XXX
+ SG_ PTC_FaultTimeoutMain : 0|1@1+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 323 HVPP4: 8 Vector__XXX
+ SG_ HVPP_SoftwareVerPs_Num : 48|8@1+ (1,0) [0|255] "Number" Vector__XXX
+ SG_ HVPP_LtdOperationCausePs_Flag : 40|8@1+ (1,0) [0|255] "flag" Vector__XXX
+ SG_ HVPP_FailPsOpenLoad_Flag : 38|1@1+ (1,0) [0|1] "flag" Vector__XXX
+ SG_ HVPP_FailPsIGBT_Flag : 37|1@1+ (1,0) [0|1] "flag" Vector__XXX
+ SG_ HVPP_FailPcbTempSensorPs_Flag : 36|1@1+ (1,0) [0|1] "flag" Vector__XXX
+ SG_ HVPP_FailCoreTempSensorPs_Flag : 35|1@1+ (1,0) [0|1] "flag" Vector__XXX
+ SG_ HVPP_FailCurrentSensorPs_Flag : 34|1@1+ (1,0) [0|1] "flag" Vector__XXX
+ SG_ HVPP_FailLVSensorPs_Flag : 33|1@1+ (1,0) [0|1] "flag" Vector__XXX
+ SG_ HVPP_FailHVSensorPs_Flag : 32|1@1+ (1,0) [0|1] "flag" Vector__XXX
+ SG_ HVPP_FltMsgTmOutCCU2Ps_Flag : 24|1@1+ (1,0) [0|1] "flag" Vector__XXX
+ SG_ HVPP_FltPcbThermalShutDnPs_Flag : 14|1@1+ (1,0) [0|1] "flag" Vector__XXX
+ SG_ HVPP_FltThermalShutDnPs_Fla : 13|1@1+ (1,0) [0|1] "flag" Vector__XXX
+ SG_ HVPP_FltOverCurrentPs_Flag : 12|1@1+ (1,0) [0|1] "flag" Vector__XXX
+ SG_ HVPP_FltHVHighPs_Flag : 11|1@1+ (1,0) [0|1] "flag" Vector__XXX
+ SG_ HVPP_FltHVLowPs_Flag : 10|1@1+ (1,0) [0|1] "flag" Vector__XXX
+ SG_ HVPP_FltLVHighPs_Flag : 9|1@1+ (1,0) [0|1] "flag" Vector__XXX
+ SG_ HVPP_FltLVLowPs_Flag : 8|1@1+ (1,0) [0|1] "flag" Vector__XXX
+ SG_ HVPP_FltPs_Flag : 0|1@1+ (1,0) [0|1] "flag" Vector__XXX
+
+BO_ 321 HVPP2: 8 HVPP
+ SG_ HVPP_FltLVLowDr_Flag : 8|1@1+ (1,0) [0|1] "flag" Vector__XXX
+ SG_ HVPP_SoftwareVerDr_Num : 48|8@1+ (1,0) [0|255] "Number" Vector__XXX
+ SG_ HVPP_FailCoreTempSensorDr_Flag : 35|1@1+ (1,0) [0|1] "flag" Vector__XXX
+ SG_ HVPP_LtdOperationCauseDr_Flag : 40|8@1+ (1,0) [0|255] "flag" Vector__XXX
+ SG_ HVPP_FailDrOpenLoad_Flag : 38|1@1+ (1,0) [0|1] "flag" Vector__XXX
+ SG_ HVPP_FailDrIGBT_Flag : 37|1@1+ (1,0) [0|1] "flag" Vector__XXX
+ SG_ HVPP_FailCurrentSensorDr_Flag : 34|1@1+ (1,0) [0|1] "flag" Vector__XXX
+ SG_ HVPP_FailPcbTempSensorDr_Flag : 36|1@1+ (1,0) [0|1] "flag" Vector__XXX
+ SG_ HVPP_FailLVSensorDr_Flag : 33|1@1+ (1,0) [0|1] "flag" Vector__XXX
+ SG_ HVPP_FailHVSensorDr_Flag : 32|1@1+ (1,0) [0|1] "flag" Vector__XXX
+ SG_ HVPP_FltMsgTmOutCCU2Dr_Flag : 24|1@1+ (1,0) [0|1] "flag" Vector__XXX
+ SG_ HVPP_FltPcbThermalShutDnDr_Flag : 14|1@1+ (1,0) [0|1] "flag" Vector__XXX
+ SG_ HVPP_FltThermalShutDnDr_Flag : 13|1@1+ (1,0) [0|1] "flag" Vector__XXX
+ SG_ HVPP_FltOverCurrentDr_Flag : 12|1@1+ (1,0) [0|1] "flag" Vector__XXX
+ SG_ HVPP_FltHVHighDr_Flag : 11|1@1+ (1,0) [0|1] "flag" Vector__XXX
+ SG_ HVPP_FltLVHighDr_Flag : 9|1@1+ (1,0) [0|1] "flag" Vector__XXX
+ SG_ HVPP_FltHVLowDr_Flag : 10|1@1+ (1,0) [0|1] "Flag" Vector__XXX
+ SG_ HVPP_FltDr_Flag : 0|1@1+ (1,0) [0|1] "flag" Vector__XXX
+
+BO_ 322 HVPP3: 8 HVPP
+ SG_ HVPP_OpStatePs_Flag : 1|2@1+ (1,0) [0|3] "flag" Vector__XXX
+ SG_ HVPP__DutyFBPs_Perc : 48|8@1+ (0.5,0) [0|100] "%" Vector__XXX
+ SG_ HVPP__CurentPs_A : 40|8@1+ (0.2,0) [0|50] "A" Vector__XXX
+ SG_ HVPP__VoltagePs_V : 32|8@1+ (4,0) [0|1000] "V" Vector__XXX
+ SG_ HVPP__CstPwrPs_W : 16|16@1+ (1,0) [0|10000] "W" Vector__XXX
+ SG_ HVPP__OutTempPs_DegC : 8|8@1+ (1,-40) [-40|200] "DegC" Vector__XXX
+ SG_ HVPP__ControlTypePs_Flag : 4|4@1+ (1,0) [0|1] "flag" Vector__XXX
+ SG_ HVPP_ReadyStatusPs_Flag : 0|1@1+ (1,0) [0|1] "flag" Vector__XXX
+
+BO_ 273 CCU2: 8 CCU
+ SG_ RESERVED6 : 56|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ CCU_BlwrLvlSignalVaild : 48|8@1+ (1,0) [0|0] "flag" Vector__XXX
+ SG_ CCU_BlwrLvl : 44|4@1+ (1,0) [0|9] "flag" Vector__XXX
+ SG_ CCU_FltMsgTmOutHVPP4_Flag : 43|1@1+ (1,0) [0|0] "flag" Vector__XXX
+ SG_ CCU_FltMsgTmOutHVPP3_Flag : 42|1@1+ (1,0) [0|1] "flag" Vector__XXX
+ SG_ CCU_FltMsgTmOutHVPP2_Flag : 41|1@1+ (1,0) [0|1] "flag" Vector__XXX
+ SG_ CCU_FltMsgTmOutHVPP1_Flag : 40|1@1+ (1,0) [0|1] "flag" Vector__XXX
+ SG_ CCU_HVPPSelfDischargeReq_flag : 24|1@1+ (1,0) [0|1] "flag" Vector__XXX
+ SG_ CCU_HVPPTargetDutyPassenger_Perc : 16|8@1+ (0.5,0) [0|100] "%" Vector__XXX
+ SG_ CCU_HVPPTargetDutyDriver_Perc : 8|8@1+ (0.5,0) [0|100] "%" Vector__XXX
+ SG_ CCU_DriveSideType : 4|1@1+ (1,0) [0|1] "flag" Vector__XXX
+ SG_ CCU_xEV_BmsRomType : 1|3@1+ (1,0) [0|7] "flag" Vector__XXX
+ SG_ CCU_HVPPAllowOperation_Flag : 0|1@1+ (1,0) [0|1] "flag" Vector__XXX
+
+BO_ 320 HVPP1: 8 HVPP
+ SG_ HVPP_HVPtcIntLk_Flag : 3|1@1+ (1,0) [0|1] "flag" Vector__XXX
+ SG_ HVPP__DutyFBDr_Perc : 48|8@1+ (0.5,0) [0|100] "%" Vector__XXX
+ SG_ HVPP__CurentDr_A : 40|8@1+ (0.2,0) [0|50] "A" Vector__XXX
+ SG_ HVPP__VoltageDr_V : 32|8@1+ (4,0) [0|1000] "V" Vector__XXX
+ SG_ HVPP__CstPwrDr_W : 16|16@1+ (1,0) [0|10000] "W" Vector__XXX
+ SG_ HVPP__OutTempDr_DegC : 8|8@1+ (1,-40) [-40|200] "flag" Vector__XXX
+ SG_ HVPP__ControlTypeDr_Flag : 4|4@1+ (1,0) [0|1] "flag" Vector__XXX
+ SG_ HVPP_OpStateDr_Flag : 1|2@1+ (1,0) [0|3] "flag" Vector__XXX
+ SG_ HVPP_ReadyStatusDr_Flag : 0|1@1+ (1,0) [0|1] "flag" Vector__XXX
+
+
+
+CM_ BO_ 3221225472 "This is a message for not used signals, created by Vector CANdb++ DBC OLE DB Provider.";
+BA_DEF_  "BusType" STRING ;
+BA_DEF_ BU_  "NodeLayerModules" STRING ;
+BA_DEF_ BU_  "ECU" STRING ;
+BA_DEF_ BU_  "CANoeJitterMax" INT 0 0;
+BA_DEF_ BU_  "CANoeJitterMin" INT 0 0;
+BA_DEF_ BU_  "CANoeDrift" INT 0 0;
+BA_DEF_ BU_  "CANoeStartDelay" INT 0 0;
+BA_DEF_DEF_  "BusType" "";
+BA_DEF_DEF_  "NodeLayerModules" "";
+BA_DEF_DEF_  "ECU" "";
+BA_DEF_DEF_  "CANoeJitterMax" 0;
+BA_DEF_DEF_  "CANoeJitterMin" 0;
+BA_DEF_DEF_  "CANoeDrift" 0;
+BA_DEF_DEF_  "CANoeStartDelay" 0;
+SIG_GROUP_ 322 New_Signal_Group_2 1 :;
+
