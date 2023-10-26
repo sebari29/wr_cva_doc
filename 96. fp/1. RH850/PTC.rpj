@@ -6,7 +6,7 @@
   <Device>RH850</Device>
   <OperationTab>
     <Endian>RFLG_ENDIAN_LITTLE</Endian>
-    <ProgramFile>D:\work\2.project\CVx\1. doc\97. 바이너리\231024\PTC-Boot-230904.mot,D:\work\2.project\CVx\1. doc\97. 바이너리\231024\Woory_PTC_Heater_CV-0106-231024.mot</ProgramFile>
+    <ProgramFile>D:\work\2.project\CVx\1. doc\97. 바이너리\231025\Woory_PTC_Heater_CV-0106-231025(include boot).mot</ProgramFile>
   </OperationTab>
   <OperationSettingTab>
     <FillCode>True</FillCode>
