@@ -11,11 +11,11 @@
   <OperationSettingTab>
     <FillCode>True</FillCode>
     <FillData>True</FillData>
-    <EraseBeforeProgram>False</EraseBeforeProgram>
+    <EraseBeforeProgram>True</EraseBeforeProgram>
     <VerifyOption>VerifyOPT_ReadCommand</VerifyOption>
     <VerifyOptionArea>True</VerifyOptionArea>
     <AreaOverError>True</AreaOverError>
-    <EraseOption>EraseBlock</EraseOption>
+    <EraseOption>EraseChip</EraseOption>
     <ChecksumOption>SUMTYPE_ADD32</ChecksumOption>
     <SkipIDVerify>False</SkipIDVerify>
     <UseRangeSum>False</UseRangeSum>
