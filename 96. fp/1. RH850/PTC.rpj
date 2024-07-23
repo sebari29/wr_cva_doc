@@ -6,7 +6,7 @@
   <Device>RH850</Device>
   <OperationTab>
     <Endian>RFLG_ENDIAN_LITTLE</Endian>
-    <ProgramFile>D:\work\2.project\CVx\1. doc\97. 바이너리\231025\Woory_PTC_Heater_CV-0106-231025(include boot).mot</ProgramFile>
+    <ProgramFile>D:\work\2.project\MVa\1. doc\wr_mva_ptc_heater_doc\97. 바이너리\Front\240704_V0113\Update\PTC_Heater_Boot-01.00-231115-0x07A6B329.mot</ProgramFile>
   </OperationTab>
   <OperationSettingTab>
     <FillCode>True</FillCode>
@@ -69,9 +69,9 @@
     <ExtraOptionProtect>False</ExtraOptionProtect>
   </DeviceOptionTab>
   <ConnectOptionTab>
-    <Tool>COMMTYPE_E1</Tool>
+    <Tool>COMMTYPE_E2</Tool>
     <ToolNum>Tool_AutoSelect</ToolNum>
-    <ToolPower>50</ToolPower>
+    <ToolPower>0</ToolPower>
     <ToolConnectMode>RFPSet</ToolConnectMode>
     <ToolConnectPinOut>0</ToolConnectPinOut>
     <ToolConnectPinLvl>0</ToolConnectPinLvl>
