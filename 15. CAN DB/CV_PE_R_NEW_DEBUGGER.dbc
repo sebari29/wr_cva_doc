@@ -1,0 +1,213 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: ECU DATC
+
+
+BO_ 1331 R_NEW_DEBUGGER2_PASSENGER: 8 Vector__XXX
+ SG_ DEBUG_PASSENGER_RLogicStatus : 48|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ DEBUG_PASSENGER_MaintainOhm : 49|15@1- (1,0) [0|0] "" Vector__XXX
+ SG_ DEBUG_PASSENGER_CurPower : 0|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ DEBUG_PASSENGER_CurOhm : 32|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ DEBUG_PASSENGER_CurCurrent : 16|16@1+ (1,0) [0|65535] "" Vector__XXX
+
+BO_ 1329 R_NEW_DEBUGGER2_DRIVER: 8 Vector__XXX
+ SG_ DEBUG_DRIVER_RLogicStatus : 48|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ DEBUG_DRIVER_MaintainOhm : 49|15@1- (1,0) [0|0] "" Vector__XXX
+ SG_ DEBUG_DRIVER_CurPower : 0|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ DEBUG_DRIVER_CurOhm : 32|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ DEBUG_DRIVER_CurCurrent : 16|16@1+ (1,0) [0|65535] "" Vector__XXX
+
+BO_ 1330 R_NEW_DEBUGGER_PASSENGER: 8 Vector__XXX
+ SG_ DEBUG_PASSENGER_ThdOhm : 48|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ DEBUG_PASSENGER_TargetPower : 0|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ DEBUG_PASSENGER_TargetOhm : 32|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ DEBUG_PASSENGER_TargetCurrent : 16|16@1+ (1,0) [0|65535] "" Vector__XXX
+
+BO_ 1328 R_NEW_DEBUGGER_DRIVER: 8 Vector__XXX
+ SG_ DEBUG_DRIVER_ThdOhm : 48|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ DEBUG_DRIVER_TargetPower : 0|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ DEBUG_DRIVER_TargetOhm : 32|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ DEBUG_DRIVER_TargetCurrent : 16|16@1+ (1,0) [0|65535] "" Vector__XXX
+
+BO_ 1620 MAIN3: 8 DATC
+ SG_ C_TargetRpm : 0|16@1+ (1,0) [0|8600] "rpm"  ECU
+ SG_ C_CompReq : 16|1@1+ (1,0) [0|1] "Flag"  ECU
+ SG_ C_BlowerLevel : 17|5@1+ (1,0) [0|8] "��"  ECU
+ SG_ C_CompDischargeReq : 22|1@1+ (1,0) [0|1] "Flag"  ECU
+ SG_ C_EvapTarget : 24|8@1+ (0.1,-10) [-10|20] "��"  ECU
+ SG_ C_EvapTemp : 32|10@1+ (0.1,-20) [-20|82] "��"  ECU
+ SG_ C_AmbTemp : 48|8@1+ (0.5,-40) [-40|60] "��"  ECU
+ SG_ C_Refri_Pressure : 56|8@1+ (0.13,0) [0|33] "Kgf/��"  ECU
+
+BO_ 1632 ECOMP1: 8 ECU
+ SG_ E_R_IvrC : 0|16@1+ (1,0) [0|8600] "rpm"  DATC
+ SG_ E_Current : 40|8@1+ (0.1,0) [0|25.4] "A"  DATC
+ SG_ E_InverterTemp : 48|8@1+ (1,-40) [0|215] "��"  DATC
+ SG_ E_Voltage : 56|8@1+ (4,0) [0|1016] "V"  DATC
+
+BO_ 1633 ECOMP2: 8 ECU
+ SG_ E_WaitModeCause : 0|8@1+ (1,0) [0|255] "0"  DATC
+ SG_ E_SleepModeCause : 8|8@1+ (1,0) [0|255] "0"  DATC
+ SG_ E_OperationStatus : 16|6@1+ (1,0) [0|63] "0"  DATC
+ SG_ E_ConsumptionPower : 22|10@1+ (10,0) [0|8000] "W"  DATC
+
+BO_ 512 MAIN7: 8 DATC
+ SG_ CM_PTCDrTargetDuty : 0|8@1+ (0.5,0) [0|100] "%"  ECU
+ SG_ CM_PTCPsTargetDuty : 8|8@1+ (0.5,0) [0|100] "%"  ECU
+ SG_ CM_PTCOperation : 16|1@1+ (1,0) [0|1] "0"  ECU
+ SG_ CM_PTCDischargeReq : 17|1@1+ (1,0) [0|1] "0"  ECU
+ SG_ CM_PTCTimeout_HV_PTC1 : 40|1@1+ (1,0) [0|1] "0"  ECU
+ SG_ CM_PTCTimeout_HV_PTC2 : 41|1@1+ (1,0) [0|1] "0"  ECU
+ SG_ CM_PTCTimeout_HV_PTC3 : 42|1@1+ (1,0) [0|1] "0"  ECU
+ SG_ CM_PTCTimeout_HV_PTC4 : 43|1@1+ (1,0) [0|1] "0"  ECU
+ SG_ CM_PTC_Option1 : 44|1@1+ (1,0) [0|3] "0"  ECU
+
+BO_ 513 HV_PTC1: 8 ECU
+ SG_ PTC_PcbTemp : 0|8@1+ (1,-40) [-40|160] "��"  DATC
+ SG_ PTC_ConsumptionPwrSum_W : 8|16@1+ (1,0) [0|10000] "W"  DATC
+ SG_ PTC_PtcInputVolt : 24|8@1+ (4,0) [0|100] "V"  DATC
+ SG_ PTC_SWVersion : 56|8@1+ (1,0) [0|255] "0"  DATC
+
+BO_ 514 HV_PTC2: 8 ECU
+ SG_ PTC_DrPtcReady : 0|1@1+ (1,0) [0|1] "0"  DATC
+ SG_ PTC_DrState : 2|2@1+ (1,0) [0|3] "0"  DATC
+ SG_ PTC_DrCoreTemp : 8|8@1+ (1,-40) [-40|160] "��"  DATC
+ SG_ PTC_ConsumptionDrPwr_W : 16|16@1+ (1,0) [0|10000] "W"  DATC
+ SG_ PTC_DrDutyFB_Power : 32|8@1+ (0.5,0) [0|100] "%"  DATC
+ SG_ PTC_DrDutyFB_IGBT : 40|8@1+ (0.5,0) [0|100] "%"  DATC
+ SG_ PTC_PtcDrCurent : 48|8@1+ (0.2,0) [0|50] "A"  DATC
+ SG_ PTC_FaultDrCoreOverTemp : 56|1@1+ (1,0) [0|1] "0"  DATC
+ SG_ PTC_FaultDrPtcOverCurrent : 57|1@1+ (1,0) [0|1] "0"  DATC
+ SG_ PTC_FailDrCurrentSensor : 58|1@1+ (1,0) [0|1] "0"  DATC
+ SG_ PTC_FailDrCoreTempSensor : 59|1@1+ (1,0) [0|1] "0"  DATC
+
+BO_ 515 HV_PTC3: 8 ECU
+ SG_ PTC_PsPtcReady : 0|1@1+ (1,0) [0|1] "0"  DATC
+ SG_ PTC_PsState : 2|2@1+ (1,0) [0|3] "0"  DATC
+ SG_ PTC_PsCoreTemp : 8|8@1+ (1,-40) [-40|160] "��"  DATC
+ SG_ PTC_ConsumptionPsPwr_W : 16|16@1+ (1,0) [0|10000] "W"  DATC
+ SG_ PTC_PsDutyFB_Power : 32|8@1+ (0.5,0) [0|100] "%"  DATC
+ SG_ PTC_PsDutyFB_IGBT : 40|8@1+ (0.5,0) [0|100] "%"  DATC
+ SG_ PTC_PtcPsCurent : 48|8@1+ (0.2,0) [0|50] "A"  DATC
+ SG_ PTC_FaultPsCoreOverTemp : 56|1@1+ (1,0) [0|1] "0"  DATC
+ SG_ PTC_FaultPsPtcOverCurrent : 57|1@1+ (1,0) [0|1] "0"  DATC
+ SG_ PTC_FailPsCurrentSensor : 58|1@1+ (1,0) [0|1] "0"  DATC
+ SG_ PTC_FailPsCoreTempSensor : 59|1@1+ (1,0) [0|1] "0"  DATC
+
+BO_ 516 HV_PTC4: 8 ECU
+ SG_ PTC_InterLockDetect : 13|1@1+ (1,0) [0|1] "0"  DATC
+ SG_ PTC_FaultPtc : 0|1@1+ (1,0) [0|1] "0"  DATC
+ SG_ PTC_FaultLVLow : 1|1@1+ (1,0) [0|1] "0"  DATC
+ SG_ PTC_FaultLVHigh : 2|1@1+ (1,0) [0|1] "0"  DATC
+ SG_ PTC_FaultHVLow : 3|1@1+ (1,0) [0|1] "0"  DATC
+ SG_ PTC_FaultHVHigh : 4|1@1+ (1,0) [0|1] "0"  DATC
+ SG_ PTC_FaultPcbOverTemp : 8|1@1+ (1,0) [0|1] "0"  DATC
+ SG_ PTC_FailLowVoltSensor : 9|1@1+ (1,0) [0|1] "0"  DATC
+ SG_ PTC_FailHighVoltSensor : 10|1@1+ (1,0) [0|1] "0"  DATC
+ SG_ PTC_FailPcbTempSensor : 11|1@1+ (1,0) [0|1] "0"  DATC
+ SG_ PTC_FaultTimeoutMain : 12|1@1+ (1,0) [0|1] "0"  DATC
+
+
+
+BA_DEF_ BO_  "GenMsgStartDelayTime" INT 0 2000;
+BA_DEF_ BO_  "GenMsgSendType" ENUM  "Cyclic","NoMsgSendType";
+BA_DEF_ BO_  "GenMsgNrOfRepetition" INT 0 3;
+BA_DEF_ BO_  "GenMsgDelayTime" INT 0 20;
+BA_DEF_ BO_  "GenMsgCycleTimeFast" INT 0 500;
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 2000;
+BA_DEF_  "Baudrate" INT 50000 1000000;
+BA_DEF_ BO_  "BusType" STRING ;
+BA_DEF_DEF_  "GenMsgStartDelayTime" 0;
+BA_DEF_DEF_  "GenMsgSendType" "Cyclic";
+BA_DEF_DEF_  "GenMsgNrOfRepetition" 3;
+BA_DEF_DEF_  "GenMsgDelayTime" 0;
+BA_DEF_DEF_  "GenMsgCycleTimeFast" 40;
+BA_DEF_DEF_  "GenMsgCycleTime" 10;
+BA_DEF_DEF_  "Baudrate" 500000;
+BA_DEF_DEF_  "BusType" "CAN";
+VAL_ 1620 C_CompReq 0 "AC Output OFF
+0x1: AC Output ON" ;
+VAL_ 1620 C_CompDischargeReq 0 "Not-Request,0x1: Request" ;
+VAL_ 1633 E_WaitModeCause 1 "Low_Voltage, 0x02 : High_Voltage, 0x04 : Over_Heat_Protection,
+0x08 : Over_Loaded, 0x10 : Over_Current_Protection,
+0x20 : Abnormal (not receiving), 0xFF : Fault" ;
+VAL_ 1633 E_SleepModeCause 1 "Thermistor open, 0x02: Thermister short, 0x08: Short circuit current,
+0x10H: Missed Restart,, 0x20: Current measuring, 0x40; Line Open Error,
+0x80: Internal Error, 0xFF : Fault" ;
+VAL_ 1633 E_OperationStatus 1 "Initialize Mode, 0x02: Standby Mode, 0x04: Wait Mode, 0x08: Sleep Mode,
+0x10: Operating Mode, 0x3F : Fault" ;
+VAL_ 1633 E_ConsumptionPower 1023 "Fault" ;
+VAL_ 512 CM_PTCOperation 0 "Operation is not allowed
+0x1 : Operation is allowed" ;
+VAL_ 512 CM_PTCDischargeReq 0 "Not-Request, 0x1: Request" ;
+VAL_ 512 CM_PTCTimeout_HV_PTC1 0 "Normal, 0x1: Message Timeout" ;
+VAL_ 512 CM_PTCTimeout_HV_PTC2 0 "Normal, 0x1: Message Timeout" ;
+VAL_ 512 CM_PTCTimeout_HV_PTC3 0 "Normal, 0x1: Message Timeout" ;
+VAL_ 512 CM_PTCTimeout_HV_PTC4 0 "Normal, 0x1: Message Timeout" ;
+VAL_ 512 CM_PTC_Option1 0 "LHD, 0x1: RHD" ;
+VAL_ 514 PTC_DrState 0 "PTC DR has been in stop.
+0x1 : PTC DR has been in operation
+0x2 : PTC DR has been in failure mode(IGBT)
+0x3 : PTC DR has been in limited operation" ;
+VAL_ 514 PTC_FaultDrCoreOverTemp 0 "NORMAL 0x1 : FAULT" ;
+VAL_ 514 PTC_FaultDrPtcOverCurrent 0 "NORMAL 0x1 : FAULT" ;
+VAL_ 514 PTC_FailDrCurrentSensor 0 "NORMAL 0x1 : FAIL (Open or Short)" ;
+VAL_ 514 PTC_FailDrCoreTempSensor 0 "NORMAL 0x1 : FAIL (Open or Short)" ;
+VAL_ 515 PTC_PsPtcReady 0 "PTC PS has been in stop.
+0x1 : PTC PS has been in operation
+0x2 : PTC PS has been in failure mode
+0x3 : PTC PS has been in limited operation" ;
+VAL_ 515 PTC_PsState 0 "PTC DR has been in stop.
+0x1 : PTC DR has been in operation
+0x2 : PTC DR has been in failure mode(IGBT)
+0x3 : PTC DR has been in limited operation" ;
+VAL_ 515 PTC_FaultPsCoreOverTemp 0 "NORMAL 0x1 : FAULT" ;
+VAL_ 515 PTC_FaultPsPtcOverCurrent 0 "NORMAL 0x1 : FAULT" ;
+VAL_ 515 PTC_FailPsCurrentSensor 0 "NORMAL 0x1 : FAIL (Open or Short)" ;
+VAL_ 515 PTC_FailPsCoreTempSensor 0 "NORMAL 0x1 : FAIL (Open or Short)" ;
+VAL_ 516 PTC_InterLockDetect 1 "InterLock of HTR FAULT" 0 "InterLock of HTR NORMAL" ;
+VAL_ 516 PTC_FaultPtc 0 "The HV PTC has been in normal mode. (Enable to control)
+0x1 : The HV PTC has been in failure mode. (Disable to control)" ;
+VAL_ 516 PTC_FaultLVLow 0 "NORMAL 0x1 : FAULT" ;
+VAL_ 516 PTC_FaultLVHigh 0 "NORMAL 0x1 : FAULT" ;
+VAL_ 516 PTC_FaultHVLow 0 "NORMAL 0x1 : FAULT" ;
+VAL_ 516 PTC_FaultHVHigh 0 "NORMAL 0x1 : FAULT" ;
+VAL_ 516 PTC_FaultPcbOverTemp 0 "NORMAL 0x1 : FAULT" ;
+VAL_ 516 PTC_FailLowVoltSensor 0 "NORMAL 0x1 : FAIL (Open or Short)" ;
+VAL_ 516 PTC_FailHighVoltSensor 0 "NORMAL 0x1 : FAIL (Open or Short)" ;
+VAL_ 516 PTC_FailPcbTempSensor 0 "NORMAL 0x1 : FAIL (Open or Short)" ;
+VAL_ 516 PTC_FaultTimeoutMain 0 "NORMAL 0x1: MESSAGE TIMEOUT" ;
+
