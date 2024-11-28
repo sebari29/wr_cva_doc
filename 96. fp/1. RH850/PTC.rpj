@@ -6,7 +6,7 @@
   <Device>RH850</Device>
   <OperationTab>
     <Endian>RFLG_ENDIAN_LITTLE</Endian>
-    <ProgramFile>D:\work\2.project\MVa\1. doc\wr_mva_ptc_heater_doc\97. 바이너리\Front\240704_V0113\Update\PTC_Heater_Boot-01.00-231115-0x07A6B329.mot</ProgramFile>
+    <ProgramFile>D:\work\2.project\Maruti SUZUKI\2. program\maruti_suzuki_ev_ptc_app\DefaultBuild\maruti_suzuki.s19,D:\work\2.project\Maruti SUZUKI\2. program\maruti_suzuki_ev_ptc_app\DefaultBuild\PTC_Muriti_Suzuki_Heater_Boot-1-241108-0x07AA3780.mot</ProgramFile>
   </OperationTab>
   <OperationSettingTab>
     <FillCode>True</FillCode>
