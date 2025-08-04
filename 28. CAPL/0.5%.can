@@ -1,0 +1,122 @@
+/*@!Encoding:949*/
+includes
+{
+  
+}
+
+variables
+{
+  message CM tATCUmsg;
+  msTimer tsT;
+  int tTimerDelay;
+  long tCount;
+  int tSequence;
+  int tStep;
+  int tDuty;
+  int tDBuf;
+  int tThermalBuf;
+  int tThermalBuf1;
+  int tPermit;
+  int tTimefac;
+}
+
+on preStart
+{
+  tThermalBuf = 0;
+  tThermalBuf1 = 0;
+  write("preStart");
+}
+
+on preStop
+{
+  write("preStop");
+}
+
+on start
+{
+  write("Test start");
+  tTimerDelay = 10;
+  tTimefac = 100; // Time unit
+  tCount = tTimefac; // 100 = 1sec
+  tSequence = 0;
+  tStep = 0;
+  tDuty = 20;
+  tPermit = 1;
+  settimer(tsT, 10);
+}
+
+on timer tsT
+{
+  if(tPermit!=0){
+    if(tDuty>=180){
+      if(--tCount==0){
+          tPermit=0;
+          tDuty = 0;
+          write("Test End.");
+        }
+        }
+        else{
+          if(--tCount==0){
+            if(tDBuf!=tDuty){
+              tDBuf=tDuty;        
+              tDuty++;
+              tCount = tTimefac;
+            }
+          }
+        }
+
+  }
+
+  tATCUmsg.CM_PTCDrTargetDuty = tDuty;
+  tATCUmsg.CM_PTCPsTargetDuty = tDuty;
+  tATCUmsg.CM_PTCOperation = tPermit;
+  settimer(tsT, 10);
+  output(tATCUmsg);
+}
+
+/*on message L_FHPTC_01 {
+  //write("this.HVPP__OutTempDr_DegC : %d", this.HVPP__OutTempDr_DegC - 40);
+  //output(this);
+}
+
+on message L_FHPTC_02 {
+  if (tThermalBuf != this.FHPTC_DrFltThermalShutDn) {
+     tThermalBuf = this.FHPTC_DrFltThermalShutDn;
+     write("FHPTC_DrFltThermalShutDn : %d", this.FHPTC_DrFltThermalShutDn);
+  }
+  //output(this);
+}
+
+on message L_FHPTC_04 {
+  if (tThermalBuf1 != this.FHPTC_PassFltThermalShutDn) {
+     tThermalBuf1 = this.FHPTC_PassFltThermalShutDn;
+     write("FHPTC_PassFltThermalShutDn : %d", this.FHPTC_PassFltThermalShutDn);
+  }
+  //output(this);
+}
+*/
+/*on key 's'
+{
+  write("measure start");
+  //tATCUmsg.L_ATCU_FHPTCOpPrmssnSta = 1;
+  tATCUmsg.CCU_HVPPTargetDutyDriver_Perc = 20;
+  tATCUmsg.CCU_HVPPTargetDutyPassenger_Perc = 20;
+  output(tATCUmsg);
+  tSequence = 0;
+  tSequence++;
+  tStep = 0;
+  settimer(tsT, 10);
+  write("Test Started.");
+}
+
+on key 'e'
+{
+  tATCUmsg.CCU_HVPPAllowOperation_Flag = 0;
+  tATCUmsg.CCU_HVPPTargetDutyDriver_Perc = 0;
+  tATCUmsg.CCU_HVPPTargetDutyPassenger_Perc = 0;
+  tStep = 0;
+  tCount = 0;
+  cancelTimer(tsT);
+  write("measure end");
+}
+*/
